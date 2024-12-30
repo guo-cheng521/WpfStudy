@@ -29,7 +29,7 @@
         <Button Content="清楚" Grid.Column="4" Grid.Row="4"/>
     </Grid>-->
     <Grid>
-        <GroupBox Header="请选择没有错别字的成语" BorderBrush="Black" Margin="5">
+        <!--<GroupBox Header="请选择没有错别字的成语" BorderBrush="Black" Margin="5">
             <StackPanel Margin="5">
                 <CheckBox Content="A. 迫不及待"/>
                 <CheckBox Content="B. 首屈一指"/>
@@ -41,6 +41,29 @@
                 </StackPanel>
                 
             </StackPanel>
-        </GroupBox>
+        </GroupBox>-->
+        <!--<DockPanel>
+            <TextBox DockPanel.Dock="Top" Height="25" BorderBrush="Black"/>
+            <TextBox DockPanel.Dock="Left" Width="150" BorderBrush="Black"/>
+            <TextBox BorderBrush="Black"/>
+        </DockPanel>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.ColumnSpan="3" BorderBrush="Black"/>
+        <TextBox Grid.Row="1" BorderBrush="Black"/>
+        <GridSplitter Grid.Row="1" Grid.Column="1"
+                      VerticalAlignment="Stretch"
+                      HorizontalAlignment="Center"
+                      Width="5"
+                      Background="Gray"
+                      ShowsPreview="True"/>
+        <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="Black"></TextBox>
     </Grid>
 </Window>
