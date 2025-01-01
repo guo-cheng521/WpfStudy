@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfBinding._6_3_6_DataContext"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfBinding" xmlns:Model="clr-namespace:WpfBinding.Model"
+        mc:Ignorable="d"
+        Title="Binding Source" Height="450" Width="800">
+    <StackPanel Background="LightBlue">
+        <StackPanel.DataContext>
+            <Model:Student Id="6" Age="29" Name="Tim"/>
+        </StackPanel.DataContext>
+        <Grid>
+            <StackPanel>
+                <TextBox Text="{Binding Path=Id}" Margin="5"/>
+                <TextBox Text="{Binding Path=Name}" Margin="5"/>
+                <TextBox Text="{Binding Path=Age}" Margin="5"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Window>

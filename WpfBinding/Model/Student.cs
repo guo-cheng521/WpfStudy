@@ -9,7 +9,10 @@ namespace WpfBinding.Model
 {
     class Student : INotifyPropertyChanged
     {
-        private string name;
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        /*private string name;
         public string Name
         {
             get { return name; }
@@ -19,7 +22,7 @@ namespace WpfBinding.Model
                     this.PropertyChanged.Invoke(this, new PropertyChangedEventArgs("Name"));
                 }
             }
-        }
+        }*/
 
         public event PropertyChangedEventHandler? PropertyChanged;
     }
