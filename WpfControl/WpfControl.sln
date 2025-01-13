@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfBinding", "..\WpfBinding
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfProperty", "..\WpfProperty\WpfProperty.csproj", "{5C55C42E-3948-4433-AE40-664AA8BCEF1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfRoutedEvent", "..\WpfRoutedEvent\WpfRoutedEvent.csproj", "{D2D8916C-E9B9-484D-B6A7-B592C60777F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfRoutedEvent", "..\WpfRoutedEvent\WpfRoutedEvent.csproj", "{D2D8916C-E9B9-484D-B6A7-B592C60777F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfCommand", "..\WpfCommand\WpfCommand.csproj", "{AB854850-CD8F-43B2-9754-74CA9662D383}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D2D8916C-E9B9-484D-B6A7-B592C60777F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2D8916C-E9B9-484D-B6A7-B592C60777F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2D8916C-E9B9-484D-B6A7-B592C60777F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB854850-CD8F-43B2-9754-74CA9662D383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB854850-CD8F-43B2-9754-74CA9662D383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB854850-CD8F-43B2-9754-74CA9662D383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB854850-CD8F-43B2-9754-74CA9662D383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
