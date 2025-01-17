@@ -20,6 +20,21 @@ namespace WpfTemplate
     /// </summary>
     public partial class CarDetailView : UserControl
     {
+        private Car car;
+        public Car Car
+        {
+            get { return car; }
+            set
+            {
+                car = value;
+                this.textBlockAutomaker.Text = car.Automaker;
+                this.textBlockName.Text = car.Name;
+                this.textBlockYear.Text = car.Year;
+                this.textBlockTopSpeed.Text = car.TopSpeed;
+                string uriStr = $@"/Resources/Images/{car.Name}.jpg";
+                this.imagePhote.Source = new BitmapImage(new Uri(uriStr, UriKind.Relative));
+            }
+        }
         public CarDetailView()
         {
             InitializeComponent();

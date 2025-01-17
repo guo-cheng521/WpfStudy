@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WpfTemplate"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+    <StackPanel Orientation="Horizontal" Margin="5">
+        <local:CarDetailView x:Name="detailView"/>
+        <ListBox x:Name="listBoxCars" Width="180" Margin="5,0"
+                 SelectionChanged="listBoxCars_SelectionChanged"/>
+    </StackPanel>
 </Window>
