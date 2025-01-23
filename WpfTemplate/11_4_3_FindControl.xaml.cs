@@ -29,9 +29,9 @@ namespace WpfTemplate
         {
             //寻找由ControlTemplate生成的控件
             //对于ControlTemplate对象，访问其目标对象的Template属性就能拿到
-            TextBox tb = this.uc.Template.FindName("textBox1",this.uc) as TextBox;
+            TextBox? tb = this.uc.Template.FindName("textBox1",this.uc) as TextBox;
             tb.Text = "Hello WPF";
-            StackPanel sp = tb.Parent as StackPanel;
+            StackPanel? sp = tb.Parent as StackPanel;
             (sp.Children[1] as TextBox).Text = "Hello ControlTemplate";
             (sp.Children[2] as TextBox).Text = "I can find you!";
         }
